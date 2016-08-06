@@ -1,0 +1,282 @@
+﻿body{
+/*background-image: url(../bg/2.png); */
+background-color: rgba(0, 0, 0, 1);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: left top;
+background-size: cover;
+}
+
+#grad{
+position: fixed;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+}
+
+
+#topbar{
+position: fixed;
+top: 0px;
+left:0px;
+width: 100%;
+height: 30px;
+margin: 0px;
+}
+
+.topbut{
+position: relative;
+height: 100%;
+float: right;
+width: 100px;
+margin-left: 10px;
+margin-right: 10px;
+top: 0px;
+font-size: 20px;
+text-align: center;
+color: rgba(170, 170, 170, 0.6);
+}
+
+.topbut h1{
+display:inline;
+font-size: 20px;
+font-family: capsuula;
+text-shadow: 1px 1px 2px #000000;
+}
+
+#botbar{
+position: fixed;
+width: 100%;
+height: 35px;
+bottom: 0px;
+left: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Infoboard{
+position: fixed;
+width: 90%;
+height: 200px;
+top: 30px;
+left: 5%;
+}
+
+.infoleft h1{
+margin: 0px;
+font-family: ostrich;
+text-align: right;
+padding-right: 20px;
+vertical-align: top;
+color: #AAAAAA;
+font-size: 95px;
+margin-bottom: -15px;
+}
+
+
+#date{
+font-size: 72px;
+}
+
+
+#searchbar{
+width: 100%;
+background: rgba(0, 0, 0, 0);
+border: none;
+font-size: 20px;
+color: #AAAAAA;
+font-family: Roboto;
+text-shadow: 0px 0px 1px #AAAAAA;
+}
+
+#spare{
+display:table-cell;
+width: 100%;
+}
+
+#implying{
+display: table-cell;
+color:#AAAAAA;
+font-size: 25px;
+padding-top: 5px;
+border: 0px;
+padding: 0px;
+}
+
+#separator{
+position: relative;
+top: 10%;
+width: 2px;
+height: 80%;
+background: #AAAAAA;
+float: left;
+}
+
+.infoleft{
+width: 30%;
+height: 100%;
+margin-right: 0px;
+padding: 0px;
+float: left;
+}
+
+.inforight{
+position: relative;
+left: 20px;
+width: calc(65% - 20px);
+width: -moz-calc(65% - 20px);
+width: -webkit-calc(65% - 20px);
+height: 100%;
+margin: 0px;
+padding:0px;
+float: left;
+}
+
+.infobar{
+position: fixed;
+top: 230px;
+left: 5%;
+height: 25px;
+width: 90%;
+font-family: 'Noto Sans TC', sans-serif;
+text-align: center;
+font-size: 20px;
+color: #AAAAAA;
+text-shadow: 2px 2px 5px #222222;
+overflow: hide;
+}
+
+#leftarrow{
+position: absolute;
+top: 3px;
+left: 0%;
+font-size: 25px;
+}
+
+#rightarrow{
+position: absolute;
+top: 3px;
+right: 0%;
+font-size: 25px;
+}
+
+
+#bookmark{
+position: fixed;
+display: inline-block;
+top: 255px;
+left: 5%;
+width: 90%;
+height: calc(100% - 290px);
+height: -moz-calc(100% - 290px);
+height: -webkit-calc(100% - 290px);
+font-family: capsuula;
+}
+
+#bookmark ul{
+position: relative;
+list-style-type: none;
+color: #AAAAAA;
+display: inline-block;
+width: 40px;
+font-size: 30px;
+text-align: center;
+}
+
+a:link{
+text-decoration: none;
+color: #AAAAAA;
+}
+
+a:visited{
+text-decoration: none;
+color: #AAAAAA;
+}
+
+#bookmark ul a:link{
+text-decoration: none;
+color: rgba(170, 170, 170, 0.6);
+}
+
+#bookmark ul a:visited{
+text-decoration: none;
+color: rgba(170, 170, 170, 0.6);
+}
+
+#bookmark ul .active{
+border-right: 2px solid #AAAAAA;
+border-left: 2px solid rgba(0, 0, 0, 0.0);
+}
+
+#bookmark ul li .active{
+border-right: 0px;
+border-left: 0px;
+color: #AAAAAA;
+}
+
+#bookmark ul a .active{
+color: #AAAAAA;
+}
+
+#links{
+position: absolute;
+top: 10px;
+display: inline-block;
+height: 100%;
+overflow: auto;
+}
+
+#links a div{
+width: 200px;
+height: 60px;
+line-height: 60px;
+text-align: center;
+font-size: 32px;
+color: #AAAAAA;
+}
+
+#links .outter{
+display: inline-block;
+margin-left:20px;
+margin-top: 20px;
+border: 2px solid #AAAAAA;
+border-radius: 4px;
+}
+
+
+/* Style for focus */
+
+.focus{
+text-shadow: 0px 0px 8px #AAAAAA;
+}
+
+/* For class hidden and remove */
+
+.hidden{
+visibility: hidden;
+}
+
+.removed{
+display:none;
+}
+
+/* No link decoration */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}

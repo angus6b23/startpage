@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Rippka</title>
+	<!--import CSS and fonts-->
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/perfect-scrollbar.css">
+	<link href="http://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" type="text/css">
+	<!--import jquery and plugins-->
+	<script type="text/javascript" src="scripts/variables.js"></script>
+	<script type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.easytabs.min.js"></script>
+	<script type="text/javascript" src="scripts/perfect-scrollbar.jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="scripts/jquery-color.js"></script>
+	<script type="text/javascript" src="scripts/bookmark.js"></script>
+	<script type="text/javascript" src="scripts/bg.js"></script>
+	<script type="text/javascript" src="scripts/time.js"></script>
+	<script type="text/javascript" src="scripts/search.js"></script>
+	<script type="text/javascript" src="scripts/button.js"></script>
+	<script type="text/javascript" src="scripts/news2.js"></script>
+</head>
+<body>
+	<!-- div for creating gradient layer-->
+	<div id="grad">
+	</div>
+	<!-- Start content here-->
+	<!--<div id="topbar">
+		<div class="topbut"><span class="fa fa-sliders"><h1>&nbsp;&nbsp;&nbsp;Option</h1></span></div>
+		<div class="topbut"><span class="fa fa-magic"><h1>&nbsp;&nbsp;&nbsp;Tools</h1></span></div>
+	</div>-->
+	<div id="Infoboard">
+		<!-- Javascript Time here-->
+		<div class="infoleft">
+			<h1 id="time"></h1>
+			<h1 id="date"></h1>
+		</div>
+		<div id="separator">
+		</div>
+		<div class="inforight">
+			<!--<h1 class="fa fa-tachometer fa-revert" style="font-size: 150px; color: #AAAAAA; margin:0px; margin-top:20px"></h1>-->
+		</div>
+	</div>
+	<!--News scroll bar here -->
+	<div class="infobar">
+		<div id="leftarrow" class="fa fa-angle-left hidden"></div>
+		<div id="message"><span id="msgtxt">Attempting to fetch news</span></div>
+		<div id="rightarrow" class="fa fa-angle-right hidden"></div>
+	</div>
+	<!--Bookmarks here-->
+	<div id="bookmark">
+		<ul>
+			<li><a href="#tab-general" class="fa fa-star"></a></li>
+			<li><a href="#tab-4chan" class="fa fa-pagelines"></a></li>
+			<li><a href="#tab-shop" class="fa fa-shopping-cart"></a></li>
+			<li><a href="#tab-bank" class="fa fa-usd"></a></li>
+			<li><a href="#tab-travel" class="fa fa-plane"></a></li>
+			<li><a href="#tab-download" class="fa fa-download"></a></li>
+			<li><a href="#tab-art" class="fa fa-picture-o"></a></li>
+			<li><a href="#tab-server" class="fa fa-server"></a></li>
+		</ul>
+		<div id="links">
+			<div id="tab-general">
+				<div class="outter"><a href="http://www.google.com.hk" target="_blank"><div><p1>Google</p1></div></a></div>
+				<div class="outter"><a href="https://drive.google.com/drive/my-drive" target="_blank"><div><p1>Drive</p1></div></a></div>
+				<div class="outter"><a href="https://www.google.com/calendar/" target="_blank"><div><p1>Calendar</p1></div></a></div>
+				<div class="outter"><a href="http://www.facebook.com" target="_blank"><div><p1>Facebook</p1></div></a></div>
+				<div class="outter"><a href="https://www.youtube.com/" target="_blank"><div><p1>Youtube</p1></div></a></div>
+				<div class="outter"><a href="http://hk.yahoo.com" target="_blank"><div><p1>Yahoo!</p1></div></a></div>
+				<div class="outter"><a href="http://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" target="_blank"><div><p1>Wikipedia</p1></div></a></div>
+				<div class="outter"><a href="http://www.nicovideo.jp/" target="_blank"><div><p1>Niconico</p1></div></a></div>
+				<div class="outter"><a href="http://www.4chan.org" target="_blank"><div><p1>4chan</p1></div></a></div>
+				<div class="outter"><a href="http://www.toodledo.com/tasks/index.php" target="_blank"><div><p1>Toodledo</p1></div></a></div>
+				<div class="outter"><a href="http://www.dmm.com/netgame/social/-/gadgets/=/app_id=825012/" target="_blank"><div><p1>TouKen RanBu</p1></div></a></div>
+				<div class="outter"><a href="https://learn.polyu.edu.hk/webapps/login/" target="_blank"><div><p1>Blackboard</p1></div></a></div>
+				<div class="outter"><a href="http://feedly.com/" target="_blank"><div><p1>Feedly</p1></div></a></div>
+				<div class="outter"><a href="https://web.whatsapp.com/" target="_blank"><div><p1>Whatsapp</p1></div></a></div>
+				<div class="outter"><a href="https://www.coursera.org/" target="_blank"><div><p1>Coursera</p1></div></a></div>
+			</div>
+			<div id="tab-4chan">
+				<div class="outter"><a href="http://boards.4chan.org/a/" target="_blank"><div><p1>/a/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/b/" target="_blank"><div><p1>/b/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/c/" target="_blank"><div><p1>/c/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/cm/" target="_blank"><div><p1>/cm/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/diy/" target="_blank"><div><p1>/diy/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/fa/" target="_blank"><div><p1>/fa/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/fit/" target="_blank"><div><p1>/fit/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/g/" target="_blank"><div><p1>/g/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/int/" target="_blank"><div><p1>/int/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/jp/" target="_blank"><div><p1>/jp/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/po/" target="_blank"><div><p1>/po/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/v/" target="_blank"><div><p1>/v/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/vg/" target="_blank"><div><p1>/vg/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/w/" target="_blank"><div><p1>/w/</p1></div></a></div>
+				<div class="outter"><a href="http://boards.4chan.org/wg/" target="_blank"><div><p1>/wg/</p1></div></a></div>
+			</div>
+			<div id="tab-bank">
+				<div class="outter"><a href="http://www.hsbc.com.hk/1/2/chinese/home" target="_blank"><div><p1>HSBC</p1></div></a></div>
+				<div class="outter"><a href="http://www.bochk.com/web/home/home.xml?lang=tw" target="_blank"><div><p1>BOC</p1></div></a></div>
+				<div class="outter"><a href="http://www.hkbea.com/html/tc/index.html" target="_blank"><div><p1>BEA</p1></div></a></div>
+				<div class="outter"><a href="https://www.paypal.com/hk/webapps/mpp/home" target="_blank"><div><p1>Paypal</p1></div></a></div>
+				<div class="outter"><a href="https://www.alipay.com/index.html" target="_blank"><div><p1>Alipal</p1></div></a></div>
+				<div class="outter"><a href="http://www.ppshk.com/index_c.html" target="_blank"><div><p1>PPS</p1></div></a></div>
+			</div>
+			<div id="tab-shop">
+				<div class="outter"><a href="https://www.taobao.com/" target="_blank"><div><p1>Taobao</p1></div></a></div>
+				<div class="outter"><a href="http://www.price.com.hk/" target="_blank"><div><p1>Price.hk</p1></div></a></div>
+				<div class="outter"><a href="http://www.amazon.com/" target="_blank"><div><p1>Amazon</p1></div></a></div>
+				<div class="outter"><a href="http://www.amazon.co.jp/" target="_blank"><div><p1>Amazon JP</p1></div></a></div>
+				<div class="outter"><a href="http://www.rakuten.co.jp/" target="_blank"><div><p1>Rakuten</p1></div></a></div>
+				<div class="outter"><a href="http://www.dcfever.com/index.php" target="_blank"><div><p1>DCFever</p1></div></a></div>
+				<div class="outter"><a href="http://www.ebay.com/" target="_blank"><div><p1>Ebay</p1></div></a></div>
+				<div class="outter"><a href="http://www.amiami.com/" target="_blank"><div><p1>AmiAmi</p1></div></a></div>
+				<div class="outter"><a href="http://www.1999.co.jp/" target="_blank"><div><p1>Hobby Search</p1></div></a></div>
+				<div class="outter"><a href="http://shopping.pchome.com.tw/index/" target="_blank"><div><p1>PChome</p1></div></a></div>
+			</div>
+			<div id="tab-travel">
+				<div class="outter"><a href="http://zh.hotels.com/" target="_blank"><div><p1>Hotels.com</p1></div></a></div>
+				<div class="outter"><a href="http://www.agoda.com/zh-hk" target="_blank"><div><p1>Agoda</p1></div></a></div>
+				<div class="outter"><a href="https://www.airbnb.com.hk/" target="_blank"><div><p1>AirBNB</p1></div></a></div>
+				<div class="outter"><a href="http://www.skyscanner.com.hk/" target="_blank"><div><p1>Skyscanner</p1></div></a></div>
+				<div class="outter"><a href="http://travel.priceline.com.hk/" target="_blank"><div><p1>Priceline</p1></div></a></div>
+			</div>
+			<div id="tab-download">
+				<div class="outter"><a href="https://sub.kamigami.org/" target="_blank"><div><p1>Kamigami</p1></div></a></div>
+				<div class="outter"><a href="http://bbs.dymy.org/forum.php" target="_blank"><div><p1>DYMY</p1></div></a></div>
+				<div class="outter"><a href="http://share.dmhy.org/" target="_blank"><div><p1>DYHY</p1></div></a></div>
+				<div class="outter"><a href="http://www.wolfsub.com/bbs/" target="_blank"><div><p1>Wolf</p1></div></a></div>
+				<div class="outter"><a href="http://www.doujinanime.com/" target="_blank"><div><p1>DA</p1></div></a></div>
+				<div class="outter"><a href="http://thepiratebay.se/" target="_blank"><div><p1>Pirate Bay</p1></div></a></div>
+				<div class="outter"><a href="https://www.tokyotosho.info/" target="_blank"><div><p1>Tokyo Toshokan</p1></div></a></div>
+				<div class="outter"><a href="http://www.nyaa.eu/" target="_blank"><div><p1>Nyaa</p1></div></a></div>
+				<div class="outter"><a href="http://sub.makedie.me/" target="_blank"><div><p1>Shooter</p1></div></a></div>
+				<div class="outter"><a href="http://www.opensubtitles.org/en" target="_blank"><div><p1>Open Sub</p1></div></a></div>
+				<div class="outter"><a href="http://skidrowcrack.com/" target="_blank"><div><p1>Skidrow</p1></div></a></div>
+			</div>
+			<div id="tab-art">
+				<div class="outter"><a href="http://www.pixiv.net/mypage.php" target="_blank"><div><p1>Pixiv</p1></div></a></div>
+				<div class="outter"><a href="http://www.deviantart.com/" target="_blank"><div><p1>Deviantart</p1></div></a></div>
+				<div class="outter"><a href="http://www.acrubbish.org/" target="_blank"><div><p1>AC Rubbish</p1></div></a></div>
+				<div class="outter"><a href="http://myfigurecollection.net/" target="_blank"><div><p1>MFC</p1></div></a></div>
+				<div class="outter"><a href="http://www.minitokyo.net/" target="_blank"><div><p1>Mini Tokyo</p1></div></a></div>
+				<div class="outter"><a href="http://konachan.net/" target="_blank"><div><p1>Konachan.net</p1></div></a></div>
+				<div class="outter"><a href="http://yande.re/" target="_blank"><div><p1>Yande.re</p1></div></a></div>
+			</div>
+			<div id="tab-server">
+				<div class="outter"><a href="https://192.168.1.88:10000" target="_blank"><div><p1>Webmin</p1></div></a></div>
+				<div class="outter"><a href="http://ripplez.no-ip.org:8181" target="_blank"><div><p1>Qbittorrent</p1></div></a></div>
+				<div class="outter"><a href="http://192.168.1.88:80" target="_blank"><div><p1>80</p1></div></a></div>
+				<div class="outter"><a href="http://ripplez.no-ip.org:8081" target="_blank"><div><p1>8081</p1></div></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- End content here-->
+	<div id="botbar">
+		<p id="implying">&gt</p>
+		<span id="spare"><input id="searchbar" type="text" name="search" value="" autocomplete="off"></sapn>
+	</div>
+</body>
+</html>
